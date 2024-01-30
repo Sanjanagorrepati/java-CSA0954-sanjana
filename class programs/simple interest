@@ -1,0 +1,25 @@
+package abcd;
+
+import java.util.Scanner;
+
+public class abcd {
+
+	public static void main(String[] args) {
+		int p,t,r;
+		double si=0.0;
+		System.out.println("enter principle amount");
+		Scanner s=new Scanner(System.in);
+		p=s.nextInt();
+		System.out.println("Enter time");
+		t=s.nextInt();
+		char age=s.next().charAt(0);
+		if(age=='y') {
+			si=(p*t*0.12)/100;
+		}
+		else {
+			si=(p*t*0.1)/100;
+		}
+		System.out.println("simple interest is"+si);
+	}
+
+}
