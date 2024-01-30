@@ -1,0 +1,36 @@
+package abcd;
+
+import java.util.Scanner;
+
+public class Noofprimeandcomposites {
+
+	public static void main(String[] args) {
+		int arr[] = new int[10];
+		int i;
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter no of elements to be entered");
+		int n = s.nextInt();
+		System.out.println("enter elements");
+		for (i = 0; i < n; i++) {
+			arr[i] = s.nextInt();
+		}
+		int pri = 0, com = 0;
+		for (i = 0; i <= arr.length-1; i++) {
+			int c = 0;
+			for (int j = 1; j <= i; j++) {
+				if (arr[i] % j == 0) {
+					c++;
+				}
+			}
+			if (c > 2) {
+				com++;
+			} else {
+				pri++;
+			}
+		}
+		System.out.println("no of prime numbers" + pri);
+		System.out.println("no of composite numbers" + com);
+
+	}
+
+}
