@@ -1,0 +1,23 @@
+package abcd;
+
+import java.util.Scanner;
+
+public class validstring {
+
+	public static void main(String[] args) {
+		String s1,s2;
+		System.out.println("enter 1st string");
+		Scanner s=new Scanner(System.in);
+		s1=s.nextLine();
+		System.out.println("ENter 2nd string");
+		s2=s.nextLine();
+		if(s1==s2) {
+			System.out.print("username is vaid");
+		}
+		else {
+			System.out.print("username is invalid");
+		}
+
+	}
+
+}
