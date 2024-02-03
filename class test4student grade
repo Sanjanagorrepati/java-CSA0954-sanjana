@@ -1,0 +1,38 @@
+package classtest2;
+
+import java.util.Scanner;
+
+public class marks {
+
+	public static void main(String[] args) {
+		int a,b,c,d,avg=0;
+		System.out.println("Enter marks in 1st subject");
+		Scanner sc=new Scanner(System.in);
+		a=sc.nextInt();
+		System.out.println("Enter marks in 2nd subject");
+		b=sc.nextInt();
+		System.out.println("Enter marks in 3rd subject");
+		c=sc.nextInt();
+		System.out.println("Enter marks in 4th subject");
+		d=sc.nextInt();
+		avg=(a+b+c+d)/4;
+		System.out.println("aggregate is"+avg);
+		if(avg>=75) {
+			System.out.println("Grade is Distinction");
+		}
+		else if(avg>=60 && avg<75) {
+			System.out.println("Student passed in 1st division");
+		}
+		else if(avg>=50 && avg<60) {
+			System.out.println("Student passed in 2nd division");
+		}
+		else if(avg>=40 && avg<50) {
+			System.out.println("Student passed in 3rd division");
+		}
+		else {
+			System.out.println("Student got failed");
+		}
+
+	}
+
+}
